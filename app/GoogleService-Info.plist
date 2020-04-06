@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>375352782664-oolpatd5hjuv45a53udf4un1giri288u.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.375352782664-oolpatd5hjuv45a53udf4un1giri288u</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAbMiHrMMCq3RG8NAHASxkAjVEVeSD66uE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>375352782664</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>se.flamsoft.myfirebaseapp</string>
+	<key>PROJECT_ID</key>
+	<string>tempdemo-78c8d</string>
+	<key>STORAGE_BUCKET</key>
+	<string>tempdemo-78c8d.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:375352782664:ios:491952776f8ce390e08d7d</string>
+	<key>DATABASE_URL</key>
+	<string>https://tempdemo-78c8d.firebaseio.com</string>
+</dict>
+</plist>
