@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 import com.example.tempapp.ui.humidity.HumidityFragment;
 
@@ -21,4 +22,19 @@ public class Humidity extends AppCompatActivity {
         }
     }
 
+    Button b5 = (Button) findViewById(R.id.button_nextweek);
+
+    public void ClickBack(View view) {
+
+        Intent intent2 = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(intent2);
+
+    }
 }
+
+
+
+
+
+
+

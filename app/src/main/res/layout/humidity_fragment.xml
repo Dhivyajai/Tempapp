@@ -1,234 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/humidity"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.humidity.HumidityFragment"
     android:background="@drawable/index">
 
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Back"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.051"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.932" />
-
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="240dp"
-        android:layout_height="49dp"
+        android:id="@+id/text_nextweek"
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:layout_weight="66.6"
+        android:gravity="center"
         android:text="Next Week"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.043" />
+        android:textAlignment="center"
+        android:textSize="40dp" />
 
-    <TextView
-        android:id="@+id/editText"
-        android:layout_width="184dp"
-        android:layout_height="53dp"
-        android:text="28 C, 70%"
-        android:textSize="40dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.108"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.184" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="33.3"
+        android:gravity="center"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/text9"
-        android:layout_width="184dp"
-        android:layout_height="53dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Monday"
-        android:textSize="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.184" />
+        <TextView
+            android:id="@+id/next_Monday2"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_weight="66.6" />
 
-    <TextView
-        android:id="@+id/text10"
-        android:layout_width="184dp"
-        android:layout_height="53dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Tuesday"
-        android:textSize="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.312" />
+        <TextView
+            android:id="@+id/next_Tuesday"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="66.6"
+            android:gravity="center" />
 
-    <TextView
-        android:id="@+id/text11"
-        android:layout_width="184dp"
-        android:layout_height="53dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Wednesday"
-        android:textSize="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.42" />
+        <TextView
+            android:id="@+id/next_Wednesday"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_weight="66.6"
+            android:gravity="center"
+            android:textAlignment="center" />
 
-    <TextView
-        android:id="@+id/text13"
-        android:layout_width="184dp"
-        android:layout_height="53dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Friday"
-        android:textSize="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.607" />
+        <TextView
+            android:id="@+id/next_Thursday"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="66.6"
+            android:gravity="center"
+            android:textAlignment="center" />
 
-    <TextView
-        android:id="@+id/text15"
-        android:layout_width="184dp"
-        android:layout_height="53dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Sunday"
-        android:textSize="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.837" />
+        <TextView
+            android:id="@+id/next_Friday"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="66.6"
+            android:gravity="center"
+            android:textAlignment="center" />
 
-    <TextView
-        android:id="@+id/text14"
-        android:layout_width="184dp"
-        android:layout_height="53dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Saturday"
-        android:textSize="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.71" />
+        <TextView
+            android:id="@+id/next_Saturday"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="66.6"
+            android:gravity="center"
+            android:textAlignment="center" />
 
-    <TextView
-        android:id="@+id/text12"
-        android:layout_width="184dp"
-        android:layout_height="53dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Thursday"
-        android:textSize="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.52" />
+        <TextView
+            android:id="@+id/next_Sunday"
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:layout_weight="66.6"
+            android:gravity="center"
+            android:textAlignment="center" />
 
-    <EditText
-        android:id="@+id/editText9"
-        android:layout_width="180dp"
-        android:layout_height="41dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.121"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.307" />
 
-    <EditText
-        android:id="@+id/editText10"
-        android:layout_width="180dp"
-        android:layout_height="41dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.103"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.413" />
+    </LinearLayout>
 
-    <EditText
-        android:id="@+id/editText11"
-        android:layout_width="180dp"
-        android:layout_height="41dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.151"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.528" />
 
-    <EditText
-        android:id="@+id/editText12"
-        android:layout_width="180dp"
-        android:layout_height="41dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.151"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.615" />
+    <Button
+        android:id="@+id/button_nextweek"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_weight="30.6"
+        android:onClick="ClickBack"
+        android:text="BACK"
+        android:textSize="20dp"
+        tools:ignore="OnClick" />
 
-    <EditText
-        android:id="@+id/editText13"
-        android:layout_width="180dp"
-        android:layout_height="41dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.151"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.715" />
 
-    <EditText
-        android:id="@+id/editText14"
-        android:layout_width="180dp"
-        android:layout_height="41dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.151"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.823" />
+</LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
 

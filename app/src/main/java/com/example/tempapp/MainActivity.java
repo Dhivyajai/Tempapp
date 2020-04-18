@@ -5,8 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.ListView;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -20,14 +24,16 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
+import java.time.MonthDay;
+import java.util.Collections;
 
 
 public class MainActivity extends AppCompatActivity {
 
 
 
-    @Override
 
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
@@ -38,21 +44,27 @@ public class MainActivity extends AppCompatActivity {
 
 
         }
-
     }
 
+     Button b1 = (Button)findViewById(R.id.button);
+     Button b2 = (Button)findViewById(R.id.button2);
 
 
+     public void onClick(View v){
+         Clicktemperature();
+          ClickHumidity();
+     }
 
-    public void Clicktemperature(View view) {
-        Intent intent = new Intent(this, Temperature.class);
-        startActivity(intent);
+     public void Clicktemperature() {
 
-    }
+         Intent intent = new Intent (this,Temperature.class);
+         startActivity(intent);
 
-    public void ClickHumidity(View view) {
+     }
 
-        Intent intent = new Intent(this, Humidity.class);
+    public void ClickHumidity() {
+
+        Intent intent = new Intent (this,Humidity.class);
         startActivity(intent);
 
     }
@@ -103,11 +115,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-
-
-
-}
+   }
 
 
 
